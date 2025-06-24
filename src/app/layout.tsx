@@ -50,8 +50,8 @@ export default async function RootLayout({ modal, children }: RootLayoutProps) {
           <TailwindIndicator />
         </body>
 
-        {/* Umami Analytics */}
-        <!-- Google tag (gtag.js) -->
+        {/* Google Analytics */}
+      
 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MPMRRTJ3ZS" data-website-id={env.UMAMI_WEBSITE_ID}></script>
 <Script async data-website-id={env.UMAMI_WEBSITE_ID}>
   {`
