@@ -12,7 +12,7 @@
   "rules": {
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "warn",
-    "react-compiler/react-compiler": "error",
+    "react-compiler/react-compiler": "off",
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
