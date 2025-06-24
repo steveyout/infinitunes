@@ -51,11 +51,16 @@ export default async function RootLayout({ modal, children }: RootLayoutProps) {
         </body>
 
         {/* Umami Analytics */}
-        <Script
-          async
-          src="https://us.umami.is/script.js"
-          data-website-id={env.UMAMI_WEBSITE_ID}
-        />
+        <!-- Google tag (gtag.js) -->
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-MPMRRTJ3ZS" data-website-id={env.UMAMI_WEBSITE_ID}></script>
+<Script async data-website-id={env.UMAMI_WEBSITE_ID}>
+  {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MPMRRTJ3ZS');
+  `}
+</script>
       </html>
     </React.StrictMode>
   );
