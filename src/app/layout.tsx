@@ -60,7 +60,7 @@ export default async function RootLayout({ modal, children }: RootLayoutProps) {
   gtag('js', new Date());
   gtag('config', 'G-MPMRRTJ3ZS');
   `}
-</script>
+</Script>
       </html>
     </React.StrictMode>
   );
