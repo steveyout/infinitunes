@@ -61,6 +61,17 @@ export default async function RootLayout({ modal, children }: RootLayoutProps) {
   gtag('config', 'G-MPMRRTJ3ZS');
   `}
 </Script>
+{/*Ads */}
+        <Script async strategy="afterInteractive" src="//acscdn.com/script/aclib.js" id={'adcash'}></Script>
+          <Script data-cfasync="false" strategy="lazyOnload">
+            {`
+           aclib.runPop({
+        zoneId: '9033646',
+    });
+             `}
+          </Script>
+        
+        
       </html>
     </React.StrictMode>
   );
