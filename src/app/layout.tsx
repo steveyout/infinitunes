@@ -63,7 +63,7 @@ export default async function RootLayout({ modal, children }: RootLayoutProps) {
 </Script>
 {/*Ads */}
         <Script async strategy="afterInteractive" src="//acscdn.com/script/aclib.js" id={'adcash'}></Script>
-          <Script data-cfasync="false" strategy="lazyOnload">
+          <Script data-cfasync="false" strategy="lazyOnload" id={'adcashcode'}>
             {`
            aclib.runPop({
         zoneId: '9033646',
